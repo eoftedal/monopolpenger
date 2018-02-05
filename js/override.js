@@ -27,7 +27,7 @@ window.addEventListener('load', function() {
 
 			getTextNodesIn(menu, function(textNode, parent) {
 				var t = textNode.nodeValue;
-				var v = t.replace(/(kryptovaluta|cryptocurrency)/ig, "tøysepenger");
+				var v = t.replace(/(kryptovaluta(er)?|crypto ?currency)/ig, "tøysepenger");
 				if (t !== v) textNode.nodeValue = v;
 			});
 		}
