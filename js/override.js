@@ -17,11 +17,22 @@ window.addEventListener('load', function() {
 		  }
 		  return textNodes;
 		}
+		function replaceEm() {
+			var menu = document;
+			getTextNodesIn(menu, function(textNode, parent) {
+				var t = textNode.nodeValue;
+				var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopolpenger");
+				if (t !== v) textNode.nodeValue = v;
+			});
 
-		var menu = document;
-		getTextNodesIn(menu, function(textNode, parent) {
-			var t = textNode.nodeValue;
-			var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopolpenger");
-			if (t !== v) textNode.nodeValue = v;
-		});
+			getTextNodesIn(menu, function(textNode, parent) {
+				var t = textNode.nodeValue;
+				var v = t.replace(/(kryptovaluta|cryptocurrency)/ig, "tøysepenger");
+				if (t !== v) textNode.nodeValue = v;
+			});
+		}
+		setTimeout(replaceEm, 0);
+		setTimeout(replaceEm, 2000);
+
+
 });
