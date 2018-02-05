@@ -1,4 +1,4 @@
-Bytter ut robotisering/robot/roboter/roboten med EDB i websider som inneholder order robotisering.
+Bytter ut crypto coins med "monopolpenger" i websider.
 
 1. `git clone https://github.com/eoftedal/edb.git`
 2. Gå til chrome://extensions
