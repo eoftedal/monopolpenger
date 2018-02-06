@@ -22,6 +22,7 @@ window.addEventListener('load', function() {
 			getTextNodesIn(menu, function(textNode, parent) {
 				var t = textNode.nodeValue;
 				var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopolpenger");
+				v = v.replace(/(krypto-?bølgen)/ig, "tøysepengeboblen");
 				v = v.replace(/(kryptovalutaen)/ig, "tøysepengen");
 				v = v.replace(/(kryptovaluta(er)?|crypto ?currency)/ig, "tøysepenger");
 				if (t !== v) textNode.nodeValue = v;
