@@ -24,8 +24,10 @@ window.addEventListener('load', function() {
 				var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopoly money");
 				v = v.replace(/(crypto( ?currency)? ?market)/ig, "pretend money market");
 				v = v.replace(/(crypto ?wave)/ig, "pretend money bubble");
-				v = v.replace(/(crypto ?currency)/ig, "pretend money");
+				v = v.replace(/(crypto ?currenc(y|ies))/ig, "pretend money");
+				v = v.replace(/(coin ?market)/ig, "toy money market");
 				v = v.replace(/(crypto ?coin)/ig, "play coin");
+				v = v.replace(/(altcoin)/ig, "other pretend money");
 				if (t !== v) textNode.nodeValue = v;
 			});
 
