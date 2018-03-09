@@ -5,4 +5,4 @@ Replaces crypto coins with "monopoly money", "pretend money" etc. on web sites.
 3. Open chrome://extensions
 4. Check "developer mode"
 5. Click "load unpacked extension" and point it to the folder
-6. Profit
+6. Profit(?)
