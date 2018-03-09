@@ -21,11 +21,11 @@ window.addEventListener('load', function() {
 			var menu = document;
 			getTextNodesIn(menu, function(textNode, parent) {
 				var t = textNode.nodeValue;
-				var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopolpenger");
-				v = v.replace(/(kryptomarked)/ig, "liksom-penge-marked");
-				v = v.replace(/(krypto-?bølgen)/ig, "tøysepengeboblen");
-				v = v.replace(/(kryptovalutaen)/ig, "tøysepengen");
-				v = v.replace(/(kryptovaluta(er)?|crypto ?currency)/ig, "tøysepenger");
+				var v = t.replace(/(bitcoin|ethereum|dogecoin|monero|litecoin)/ig, "monopoly money");
+				v = v.replace(/(crypto( ?currency)? ?market)/ig, "pretend money market");
+				v = v.replace(/(crypto ?wave)/ig, "pretend money bubble");
+				v = v.replace(/(crypto ?currency)/ig, "pretend money");
+				v = v.replace(/(crypto ?coin)/ig, "play coin");
 				if (t !== v) textNode.nodeValue = v;
 			});
 
