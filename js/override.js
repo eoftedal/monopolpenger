@@ -28,6 +28,7 @@ window.addEventListener('load', function() {
 				v = v.replace(/(coin ?market)/ig, "toy money market");
 				v = v.replace(/(crypto ?coin)/ig, "play coin");
 				v = v.replace(/(altcoin)/ig, "other pretend money");
+				v = v.replace(/(NFT|non-fungible token)/ig, "pokemon card");
 				if (t !== v) textNode.nodeValue = v;
 			});
 
